@@ -189,6 +189,10 @@ Explicit 256/Truecolor mode can be enabled using the `--color=256` and `--color=
 
 `chalkStderr` contains a separate instance configured with color support detected for `stderr` stream instead of `stdout`. Override rules from `supportsColor` apply to this too. `supportsColorStderr` is exposed for convenience.
 
+### createSupportsColor
+
+Create a [`supportsColor()`](https://github.com/chalk/supports-color) function based on a given stream. Used internally and handled for you, but exposed for convenience.
+
 ### modifierNames, foregroundColorNames, backgroundColorNames, and colorNames
 
 All supported style strings are exposed as an array of strings for convenience. `colorNames` is the combination of `foregroundColorNames` and `backgroundColorNames`.

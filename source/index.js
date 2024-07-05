@@ -5,7 +5,7 @@ import { // eslint-disable-line import/order
 	stringEncaseCRLFWithFirstIndex,
 } from './utilities.js';
 
-const {stdout: stdoutColor, stderr: stderrColor} = supportsColor;
+const {stdout: stdoutColor, stderr: stderrColor, createSupportsColor} = supportsColor;
 
 const GENERATOR = Symbol('GENERATOR');
 const STYLER = Symbol('STYLER');
@@ -218,6 +218,7 @@ export {
 } from './vendor/ansi-styles/index.js';
 
 export {
+	createSupportsColor,
 	stdoutColor as supportsColor,
 	stderrColor as supportsColorStderr,
 };

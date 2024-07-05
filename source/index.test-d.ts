@@ -1,6 +1,6 @@
 import {expectType, expectAssignable, expectError, expectDeprecated} from 'tsd';
 import chalk, {
-	Chalk, ChalkInstance, ColorInfo, ColorSupport, ColorSupportLevel, chalkStderr, supportsColor, supportsColorStderr,
+	Chalk, ChalkInstance, ColorInfo, ColorSupport, ColorSupportLevel, chalkStderr, supportsColor, supportsColorStderr, createSupportsColor,
 	ModifierName, ForegroundColorName, BackgroundColorName, ColorName,
 	Modifiers,
 } from './index.js';
@@ -23,6 +23,8 @@ if (supportsColorStderr) {
 	expectType<boolean>(supportsColorStderr.has256);
 	expectType<boolean>(supportsColorStderr.has16m);
 }
+
+expectType<ColorInfo>(createSupportsColor());
 
 // -- `supportsColorStderr` is not a member of the Chalk interface --
 expectError(chalk.reset.supportsColorStderr);

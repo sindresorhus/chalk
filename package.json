@@ -58,7 +58,7 @@
 		"log-update": "^5.0.0",
 		"matcha": "^0.7.0",
 		"tsd": "^0.19.0",
-		"xo": "^0.53.0",
+		"xo": "^0.54.2",
 		"yoctodelay": "^2.0.0"
 	},
 	"sideEffects": false,

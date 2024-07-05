@@ -251,6 +251,7 @@ export {
 	ColorInfo,
 	ColorSupport,
 	ColorSupportLevel,
+	createSupportsColor,
 // } from '#supports-color';
 } from './vendor/supports-color/index.js';
 
